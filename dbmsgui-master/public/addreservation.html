@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script type="module"></script>
+    <title>Project GUI</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <h1> Add Reservation </h1>
+    <form action="/addReservation" method="POST">
+      <lable for="type">Type:</lable>
+      <select id="type" name="type">
+          <option value="1">Compact</option>
+          <option value="2">Medium</option>
+          <option value="3">Large</option>
+          <option value="4">SUV</option>
+          <option value="5">Truck</option>
+          <option value="6">Van</option>
+      </select>
+      <lable for="category">Category:</lable>
+      <select id="category" name="category">
+          <option value="0">Basic</option>
+          <option value="1">Luxury</option>
+      </select>
+      <button type="submit" id="submitUser">Submit</button>
+    </form>
+    <div class="customerBackHolder">
+      <button class="buttons" id="customerBack" onclick = "Homepage()">Back</button>
+    </div>
+  </body>
+</html>

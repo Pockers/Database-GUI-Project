@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script type="module"></script>
+    <title>Add Customer</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <h1> Add Customer </h1>
+    <form action="/addCustomer" method="POST">
+      <lable for="custName">Customer Name:</lable>
+      <input type="text" class="userInput" id="custName" name="custName"><br><br>
+      <lable for="custPhone">Customer Phone Number:</lable>
+      <input type="text" class="userInput" id="custPhone" name="custPhone"><br><br>
+      <button type="submit" id="submitUser">Submit</button>
+    </form>
+    <div class="customerBackHolder">
+      <button class="buttons" id="customerBack" onclick = "Homepage()">Back</button>
+    </div>
+  </body>
+</html>

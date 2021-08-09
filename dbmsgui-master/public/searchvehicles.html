@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script type="module"></script>
+    <title>Search</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <h1> Search Vehicles</h1>
+    <form action="/searchVehicles" method="POST">
+      <lable for="searchVIN">VIN</lable>
+      <input type="text" class="userInput" id="searchVIN" name="searchVIN"><br><br>
+      <lable for="searchDescription">or Description</lable>
+      <input type="text" class="userInput" id="searchDescription" name="searchDescription"><br><br>
+      <button type="submit" id="submitUser">Submit</button>
+    </form>
+    <div class="customerBackHolder">
+        <button class="buttons" id="customerBack" onclick = "Homepage()">Back</button>
+    </div>
+  </body>
+</html>
